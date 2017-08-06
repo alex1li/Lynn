@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306666C9B1C46E812A7F7BAE /* Pods_Lynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F6A11EE5FA082C83D11374 /* Pods_Lynn.framework */; };
+		5A095DE01F22C2FD008C3C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A095DDF1F22C2FD008C3C9E /* AppDelegate.swift */; };
+		5A095DE21F22C2FD008C3C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A095DE11F22C2FD008C3C9E /* ViewController.swift */; };
+		5A095DE51F22C2FD008C3C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A095DE31F22C2FD008C3C9E /* Main.storyboard */; };
+		5A095DE71F22C2FD008C3C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A095DE61F22C2FD008C3C9E /* Assets.xcassets */; };
+		5A095DEA1F22C2FD008C3C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A095DE81F22C2FD008C3C9E /* LaunchScreen.storyboard */; };
+		5A095DF51F22C2FD008C3C9E /* LynnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A095DF41F22C2FD008C3C9E /* LynnTests.swift */; };
+		5A095E001F22C328008C3C9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A095DFF1F22C328008C3C9E /* GoogleService-Info.plist */; };
+		5A6E8B1E1F22E3B60084DEA2 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E8B1D1F22E3B60084DEA2 /* Queue.swift */; };
+		5A7682851F2329F300E90702 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7682841F2329F300E90702 /* FirstViewController.swift */; };
+		5AD1166C1F2BD0CB00D60C8E /* AddQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1166B1F2BD0CB00D60C8E /* AddQueueViewController.swift */; };
+		5ADADF0C1F22DDC50037EF7A /* QueueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADADF0B1F22DDC50037EF7A /* QueueTableViewCell.swift */; };
+		F54F2C3684898204DDDF4BFB /* Pods_LynnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D60C0AB60F947D95BDBD2B6 /* Pods_LynnTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A095DF11F22C2FD008C3C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A095DD41F22C2FD008C3C9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A095DDB1F22C2FD008C3C9E;
+			remoteInfo = Lynn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D60C0AB60F947D95BDBD2B6 /* Pods_LynnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F6A11EE5FA082C83D11374 /* Pods_Lynn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7F6EB89E1939CA2701FF57 /* Pods-Lynn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lynn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lynn/Pods-Lynn.debug.xcconfig"; sourceTree = "<group>"; };
+		49BF5F1E0A82632966581EEE /* Pods-LynnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynnTests/Pods-LynnTests.release.xcconfig"; sourceTree = "<group>"; };
+		526387433C2C67DE56F9A6B7 /* Pods-LynnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynnTests/Pods-LynnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A095DDC1F22C2FD008C3C9E /* Lynn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lynn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A095DDF1F22C2FD008C3C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A095DE11F22C2FD008C3C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A095DE41F22C2FD008C3C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A095DE61F22C2FD008C3C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A095DE91F22C2FD008C3C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A095DEB1F22C2FD008C3C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A095DF01F22C2FD008C3C9E /* LynnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A095DF41F22C2FD008C3C9E /* LynnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynnTests.swift; sourceTree = "<group>"; };
+		5A095DF61F22C2FD008C3C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A095DFF1F22C328008C3C9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A6E8B1D1F22E3B60084DEA2 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		5A7682841F2329F300E90702 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5AD1166B1F2BD0CB00D60C8E /* AddQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQueueViewController.swift; sourceTree = "<group>"; };
+		5ADADF0B1F22DDC50037EF7A /* QueueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTableViewCell.swift; sourceTree = "<group>"; };
+		E4EAF7B7BCCFA6163F7519D0 /* Pods-Lynn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lynn.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lynn/Pods-Lynn.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A095DD91F22C2FD008C3C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306666C9B1C46E812A7F7BAE /* Pods_Lynn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A095DED1F22C2FD008C3C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54F2C3684898204DDDF4BFB /* Pods_LynnTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AF56AEC0EA3EA7F2EC75F76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F6EB89E1939CA2701FF57 /* Pods-Lynn.debug.xcconfig */,
+				E4EAF7B7BCCFA6163F7519D0 /* Pods-Lynn.release.xcconfig */,
+				526387433C2C67DE56F9A6B7 /* Pods-LynnTests.debug.xcconfig */,
+				49BF5F1E0A82632966581EEE /* Pods-LynnTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A095DD31F22C2FD008C3C9E = {
+			isa = PBXGroup;
+			children = (
+				5A095DDE1F22C2FD008C3C9E /* Lynn */,
+				5A095DF31F22C2FD008C3C9E /* LynnTests */,
+				5A095DDD1F22C2FD008C3C9E /* Products */,
+				0AF56AEC0EA3EA7F2EC75F76 /* Pods */,
+				F724DDADB45DB2516199FC15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A095DDD1F22C2FD008C3C9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A095DDC1F22C2FD008C3C9E /* Lynn.app */,
+				5A095DF01F22C2FD008C3C9E /* LynnTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A095DDE1F22C2FD008C3C9E /* Lynn */ = {
+			isa = PBXGroup;
+			children = (
+				5A095DDF1F22C2FD008C3C9E /* AppDelegate.swift */,
+				5A095DE31F22C2FD008C3C9E /* Main.storyboard */,
+				5A7682841F2329F300E90702 /* FirstViewController.swift */,
+				5AD1166B1F2BD0CB00D60C8E /* AddQueueViewController.swift */,
+				5A095DE11F22C2FD008C3C9E /* ViewController.swift */,
+				5A6E8B1D1F22E3B60084DEA2 /* Queue.swift */,
+				5ADADF0B1F22DDC50037EF7A /* QueueTableViewCell.swift */,
+				5A095DE61F22C2FD008C3C9E /* Assets.xcassets */,
+				5A095DE81F22C2FD008C3C9E /* LaunchScreen.storyboard */,
+				5A095DEB1F22C2FD008C3C9E /* Info.plist */,
+				5A095DFF1F22C328008C3C9E /* GoogleService-Info.plist */,
+			);
+			path = Lynn;
+			sourceTree = "<group>";
+		};
+		5A095DF31F22C2FD008C3C9E /* LynnTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A095DF41F22C2FD008C3C9E /* LynnTests.swift */,
+				5A095DF61F22C2FD008C3C9E /* Info.plist */,
+			);
+			path = LynnTests;
+			sourceTree = "<group>";
+		};
+		F724DDADB45DB2516199FC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24F6A11EE5FA082C83D11374 /* Pods_Lynn.framework */,
+				0D60C0AB60F947D95BDBD2B6 /* Pods_LynnTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A095DDB1F22C2FD008C3C9E /* Lynn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A095DF91F22C2FD008C3C9E /* Build configuration list for PBXNativeTarget "Lynn" */;
+			buildPhases = (
+				F726A11941FD8589923F601D /* [CP] Check Pods Manifest.lock */,
+				5A095DD81F22C2FD008C3C9E /* Sources */,
+				5A095DD91F22C2FD008C3C9E /* Frameworks */,
+				5A095DDA1F22C2FD008C3C9E /* Resources */,
+				50368E98922663C2338F5118 /* [CP] Embed Pods Frameworks */,
+				18C2ED77AC31CF518E4FDA8A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lynn;
+			productName = Lynn;
+			productReference = 5A095DDC1F22C2FD008C3C9E /* Lynn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A095DEF1F22C2FD008C3C9E /* LynnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A095DFC1F22C2FD008C3C9E /* Build configuration list for PBXNativeTarget "LynnTests" */;
+			buildPhases = (
+				535CA303EDC6657870262F20 /* [CP] Check Pods Manifest.lock */,
+				5A095DEC1F22C2FD008C3C9E /* Sources */,
+				5A095DED1F22C2FD008C3C9E /* Frameworks */,
+				5A095DEE1F22C2FD008C3C9E /* Resources */,
+				066BAB3AD49B7B89E7099BCE /* [CP] Embed Pods Frameworks */,
+				7D1735F162ACFBA91F80AC68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A095DF21F22C2FD008C3C9E /* PBXTargetDependency */,
+			);
+			name = LynnTests;
+			productName = LynnTests;
+			productReference = 5A095DF01F22C2FD008C3C9E /* LynnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A095DD41F22C2FD008C3C9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alexander Li";
+				TargetAttributes = {
+					5A095DDB1F22C2FD008C3C9E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F4JJ4UUT39;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					5A095DEF1F22C2FD008C3C9E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F4JJ4UUT39;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5A095DDB1F22C2FD008C3C9E;
+					};
+				};
+			};
+			buildConfigurationList = 5A095DD71F22C2FD008C3C9E /* Build configuration list for PBXProject "Lynn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A095DD31F22C2FD008C3C9E;
+			productRefGroup = 5A095DDD1F22C2FD008C3C9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A095DDB1F22C2FD008C3C9E /* Lynn */,
+				5A095DEF1F22C2FD008C3C9E /* LynnTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A095DDA1F22C2FD008C3C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A095E001F22C328008C3C9E /* GoogleService-Info.plist in Resources */,
+				5A095DEA1F22C2FD008C3C9E /* LaunchScreen.storyboard in Resources */,
+				5A095DE71F22C2FD008C3C9E /* Assets.xcassets in Resources */,
+				5A095DE51F22C2FD008C3C9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A095DEE1F22C2FD008C3C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066BAB3AD49B7B89E7099BCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynnTests/Pods-LynnTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18C2ED77AC31CF518E4FDA8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lynn/Pods-Lynn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50368E98922663C2338F5118 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lynn/Pods-Lynn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		535CA303EDC6657870262F20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1735F162ACFBA91F80AC68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynnTests/Pods-LynnTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F726A11941FD8589923F601D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A095DD81F22C2FD008C3C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6E8B1E1F22E3B60084DEA2 /* Queue.swift in Sources */,
+				5A095DE21F22C2FD008C3C9E /* ViewController.swift in Sources */,
+				5A095DE01F22C2FD008C3C9E /* AppDelegate.swift in Sources */,
+				5A7682851F2329F300E90702 /* FirstViewController.swift in Sources */,
+				5AD1166C1F2BD0CB00D60C8E /* AddQueueViewController.swift in Sources */,
+				5ADADF0C1F22DDC50037EF7A /* QueueTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A095DEC1F22C2FD008C3C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A095DF51F22C2FD008C3C9E /* LynnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A095DF21F22C2FD008C3C9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A095DDB1F22C2FD008C3C9E /* Lynn */;
+			targetProxy = 5A095DF11F22C2FD008C3C9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A095DE31F22C2FD008C3C9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A095DE41F22C2FD008C3C9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A095DE81F22C2FD008C3C9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A095DE91F22C2FD008C3C9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A095DF71F22C2FD008C3C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A095DF81F22C2FD008C3C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A095DFA1F22C2FD008C3C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7F6EB89E1939CA2701FF57 /* Pods-Lynn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4JJ4UUT39;
+				INFOPLIST_FILE = Lynn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexLi.Lynn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A095DFB1F22C2FD008C3C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EAF7B7BCCFA6163F7519D0 /* Pods-Lynn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4JJ4UUT39;
+				INFOPLIST_FILE = Lynn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexLi.Lynn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A095DFD1F22C2FD008C3C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526387433C2C67DE56F9A6B7 /* Pods-LynnTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F4JJ4UUT39;
+				INFOPLIST_FILE = LynnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexLi.LynnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lynn.app/Lynn";
+			};
+			name = Debug;
+		};
+		5A095DFE1F22C2FD008C3C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49BF5F1E0A82632966581EEE /* Pods-LynnTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F4JJ4UUT39;
+				INFOPLIST_FILE = LynnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexLi.LynnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lynn.app/Lynn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A095DD71F22C2FD008C3C9E /* Build configuration list for PBXProject "Lynn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A095DF71F22C2FD008C3C9E /* Debug */,
+				5A095DF81F22C2FD008C3C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A095DF91F22C2FD008C3C9E /* Build configuration list for PBXNativeTarget "Lynn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A095DFA1F22C2FD008C3C9E /* Debug */,
+				5A095DFB1F22C2FD008C3C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A095DFC1F22C2FD008C3C9E /* Build configuration list for PBXNativeTarget "LynnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A095DFD1F22C2FD008C3C9E /* Debug */,
+				5A095DFE1F22C2FD008C3C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A095DD41F22C2FD008C3C9E /* Project object */;
+}

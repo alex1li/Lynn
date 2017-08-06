@@ -1,0 +1,6 @@
+framework module Pods_Lynn {
+  umbrella header "Pods-Lynn-umbrella.h"
+
+  export *
+  module * { export * }
+}
